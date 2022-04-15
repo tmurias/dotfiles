@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvie/vim-flake8'
+Plug 'vim-scripts/taglist.vim'
 call plug#end()
 " END PLUGIN SETUP-----------------------------------------------------
 
