@@ -1,3 +1,7 @@
+"----------------------------------------------------------------------
+"- GENERAL SETTINGS
+"----------------------------------------------------------------------
+
 " Show line numbers
 set number
 
@@ -6,12 +10,6 @@ set scrolloff=3
 
 " Gets rid of annoying delay when exiting visual mode
 set timeoutlen=1000 ttimeoutlen=0
-
-" Allow project-level vimrc settings
-set exrc
-
-" Disable unsafe commands in project-level vimrcs
-set secure
 
 " Make subdirectories search up the tree for a tags file
 set tags=tags;/
@@ -29,9 +27,26 @@ set splitbelow
 " Enable mouse
 set mouse=a
 
+
+"----------------------------------------------------------------------
+"- PLUGIN SETTINGS
+"----------------------------------------------------------------------
+
 " Taglist settings
 let g:Tlist_Show_One_File=1
 let g:Tlist_Use_Right_Window=1
+
+" Gruvbox colourscheme settings
+let g:gruvbox_contrast_dark="hard"
+
+" Jedi setings
+let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = 0
+
+
+"----------------------------------------------------------------------
+"- FUNCTIONS
+"----------------------------------------------------------------------
 
 function! Indent2Spaces()
 	set tabstop=8
@@ -39,7 +54,6 @@ function! Indent2Spaces()
 	set shiftwidth=2
 	set expandtab
 endfunction
-command! Indent2Spaces call Indent2Spaces()
 
 function! Indent4Spaces()
 	set tabstop=8
@@ -47,7 +61,13 @@ function! Indent4Spaces()
 	set shiftwidth=4
 	set expandtab
 endfunction
-command! Indent4Spaces call Indent4Spaces()
+
+function! IndentTab4()
+	set tabstop=4
+	set softtabstop=0
+	set shiftwidth=4
+	set noexpandtab
+endfunction
 
 function! IndentTab8()
 	set tabstop=8
@@ -55,8 +75,16 @@ function! IndentTab8()
 	set shiftwidth=8
 	set noexpandtab
 endfunction
+
+
+"----------------------------------------------------------------------
+"- COMMANDS
+"----------------------------------------------------------------------
+
+command! Indent2Spaces call Indent2Spaces()
+command! Indent4Spaces call Indent4Spaces()
+command! IndentTab4 call IndentTab4()
 command! IndentTab8 call IndentTab8()
 
 command! NE NERDTreeToggle
-
 command! TL TlistToggle

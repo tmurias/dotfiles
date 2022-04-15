@@ -1,22 +1,17 @@
-" START VUNDLE SETUP-----------------------------------------------------------
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
-Plugin 'scrooloose/nerdtree'  " File manager within vim
-
-call vundle#end()
-
-filetype plugin indent on
-" END VUNDLE SETUP-------------------------------------------------------------
+" START PLUGIN SETUP---------------------------------------------------
+call plug#begin("~/.vim/plugged")
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'davidhalter/jedi-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'nvie/vim-flake8'
+call plug#end()
+" END PLUGIN SETUP-----------------------------------------------------
 
 
 " Common settings across all vim configs
 source ~/.vim/baseline.vim
- 
+
 
 " 256 colors - https://gist.github.com/limingjie/4975c36d13d0927613e6
 if &term == "screen"
@@ -25,7 +20,6 @@ endif
 
 " Colorscheme
 color gruvbox
-let g:gruvbox_contrast_dark="hard"
 
 " Disable when not using dark terminal
 set background=dark
