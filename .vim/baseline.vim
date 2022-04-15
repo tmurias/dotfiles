@@ -24,6 +24,9 @@ set smartindent
 set splitright
 set splitbelow
 
+" Search recursively into subdirectories
+set path+=**
+
 " Enable mouse
 set mouse=a
 
@@ -38,6 +41,9 @@ let g:Tlist_Use_Right_Window=1
 
 " Gruvbox colourscheme settings
 let g:gruvbox_contrast_dark="hard"
+
+" Everforest config
+let g:everforest_background = "hard"
 
 " Jedi setings
 let g:jedi#popup_on_dot = 0
