@@ -10,7 +10,7 @@ call plug#end()
 
 
 " Common settings across all vim configs
-source ~/.vim/baseline.vim
+source ~/dotfiles/.vim/baseline.vim
 
 
 " 256 colors - https://gist.github.com/limingjie/4975c36d13d0927613e6
