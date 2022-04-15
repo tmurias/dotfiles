@@ -24,11 +24,14 @@ set smartindent
 set splitright
 set splitbelow
 
+" Enable mouse
+set mouse=a
+
 " Search recursively into subdirectories
 set path+=**
 
-" Enable mouse
-set mouse=a
+" Always show filename at bottom
+set laststatus=2
 
 
 "----------------------------------------------------------------------
