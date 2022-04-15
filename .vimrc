@@ -32,3 +32,6 @@ let g:NERDTreeDirArrowCollapsible="~"
 autocmd FileType c call Indent2Spaces()
 autocmd FileType h call Indent2Spaces()
 autocmd FileType python call Indent2Spaces()
+
+
+badd +1 ~/dotfiles/.vimrc

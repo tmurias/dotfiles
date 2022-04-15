@@ -97,3 +97,10 @@ command! IndentTab8 call IndentTab8()
 
 command! NE NERDTreeToggle
 command! TL TlistToggle
+
+
+"----------------------------------------------------------------------
+"- STARTUP ACTIONS
+"----------------------------------------------------------------------
+
+badd +1 ~/dotfiles/.vim/baseline.vim
