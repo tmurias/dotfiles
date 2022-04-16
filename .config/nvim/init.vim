@@ -12,7 +12,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'davidhalter/jedi-vim'     " Python autocomplete
 Plug 'tpope/vim-fugitive'       " Git
 Plug 'nvie/vim-flake8'          " Python linting
-Plug 'vim-python/python-syntax'
 Plug 'jlanzarotta/bufexplorer'
 call plug#end()
 
