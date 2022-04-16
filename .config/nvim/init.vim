@@ -13,6 +13,7 @@ Plug 'davidhalter/jedi-vim'     " Python autocomplete
 Plug 'tpope/vim-fugitive'       " Git
 Plug 'nvie/vim-flake8'          " Python linting
 Plug 'vim-python/python-syntax'
+Plug 'jlanzarotta/bufexplorer'
 call plug#end()
 
 source ~/dotfiles/.vim/baseline.vim
@@ -33,3 +34,5 @@ endif
 autocmd FileType c call Indent4Spaces()
 autocmd FileType h call Indent4Spaces()
 autocmd FileType vim call IndentTab8()
+
+badd +1 ~/dotfiles/.config/nvim/init.vim
