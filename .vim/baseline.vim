@@ -33,6 +33,9 @@ set path+=**
 " Always show filename at bottom
 set laststatus=2
 
+" Makes wrapped lines easier to read
+set breakindent
+
 
 "----------------------------------------------------------------------
 "- PLUGIN SETTINGS
