@@ -19,9 +19,8 @@
 (require 'package)
 
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-
-			 ("org" . "https://orgmode.org/elpa/")
-			 ("elpa" . "https://elpa.gnu.org/packages/")))
+                         ("org" . "https://orgmode.org/elpa/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
 (unless package-archive-contents
@@ -31,9 +30,9 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-(use-package firecode-theme
+(use-package gruvbox-theme
   :ensure t
-  :config (load-theme 'firecode t))
+  :config (load-theme 'gruvbox t))
 
 (use-package which-key
   :init (which-key-mode)
@@ -55,20 +54,76 @@
   :config
   (evil-collection-init))
 
+(use-package treemacs)
+
+(use-package treemacs-evil
+  :after (treemacs evil)
+  :ensure t)
+
+(use-package lsp-mode
+  :commands (lsp lsp-deferred)
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :config
+  (lsp-enable-which-key-integration t))
+
+(use-package python-mode
+  :ensure t
+  :hook (python-mode . lsp)
+  :custom
+  (python-shell-interpreter "python3"))
+
+(use-package lua-mode)
+
 ;; When in programming mode, treat underscores as part of words
 (add-hook 'prog-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
 
+(use-package undo-tree)
 
+(global-undo-tree-mode)
+(evil-set-undo-system 'undo-tree)
+
+;; Indent with 4 spaces
+;; https://www.emacswiki.org/emacs/IndentingC
+(add-hook 'prog-mode-hook #'(lambda () (setq-default c-basic-offset 4
+							 tab-width 4
+							 indent-tabs-mode nil)))
+
+;; Window movements are easier if you don't have to let go of control
+(general-define-key
+ :keymaps 'evil-window-map
+ "C-h" 'evil-window-left
+ "C-j" 'evil-window-down
+ "C-k" 'evil-window-up
+ "C-l" 'evil-window-right)
+
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  (when (file-directory-p "~/Development")
+    (setq projectile-project-search-path '("~/Development")))
+  (setq projectile-switch-project-action #'projectile-dired))
+
+(use-package treemacs-projectile
+  :after (treemacs projectile)
+  :ensure t)
+
+
+;; ------------------------- DON'T TOUCH ------------------------------
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(evil-collection evil general which-key firecode-theme gruvbox-theme use-package)))
+   '(treemacs-projectile projectile projectile-mode lua-mode treemacs-evil treemacs lsp-mode evil-collection evil general which-key firecode-theme gruvbox-theme use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+;; --------------------------------------------------------------------
