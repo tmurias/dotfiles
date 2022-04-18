@@ -78,10 +78,13 @@
 ;; When in programming mode, treat underscores as part of words
 (add-hook 'prog-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
 
-(use-package undo-tree)
-
-(global-undo-tree-mode)
-(evil-set-undo-system 'undo-tree)
+(use-package undo-tree
+  :ensure t
+  :after evil
+  :diminish
+  :config
+  (evil-set-undo-system 'undo-tree)
+  (global-undo-tree-mode 1))
 
 ;; Indent with 4 spaces
 ;; https://www.emacswiki.org/emacs/IndentingC
