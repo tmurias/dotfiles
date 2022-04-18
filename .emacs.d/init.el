@@ -89,14 +89,6 @@
 							 tab-width 4
 							 indent-tabs-mode nil)))
 
-;; Window movements are easier if you don't have to let go of control
-(general-define-key
- :keymaps 'evil-window-map
- "C-h" 'evil-window-left
- "C-j" 'evil-window-down
- "C-k" 'evil-window-up
- "C-l" 'evil-window-right)
-
 (use-package projectile
   :diminish projectile-mode
   :config (projectile-mode)
@@ -110,6 +102,18 @@
 (use-package treemacs-projectile
   :after (treemacs projectile)
   :ensure t)
+
+(general-define-key
+ :keymaps 'evil-normal-state-map
+ "C-u" 'evil-scroll-up)
+
+;; Window movements are easier if you don't have to let go of control
+(general-define-key
+ :keymaps 'evil-window-map
+ "C-h" 'evil-window-left
+ "C-j" 'evil-window-down
+ "C-k" 'evil-window-up
+ "C-l" 'evil-window-right)
 
 
 ;; ------------------------- DON'T TOUCH ------------------------------
