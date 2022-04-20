@@ -67,7 +67,7 @@
   :config
   (lsp-enable-which-key-integration t))
 
-(use-package python-mode
+(use-package python
   :ensure t
   :hook (python-mode . lsp)
   :custom
@@ -114,6 +114,11 @@
  "C-j" 'evil-window-down
  "C-k" 'evil-window-up
  "C-l" 'evil-window-right)
+
+;; Note - run M-x all-the-icons-install-fonts on new machine
+(use-package all-the-icons)
+(use-package doom-modeline
+  :init (doom-modeline-mode 1))
 
 
 ;; ------------------------- DON'T TOUCH ------------------------------
