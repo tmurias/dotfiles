@@ -90,9 +90,8 @@
 
 ;; Indent with 4 spaces
 ;; https://www.emacswiki.org/emacs/IndentingC
-(add-hook 'prog-mode-hook #'(lambda () (setq-default c-basic-offset 4
-							 tab-width 4
-							 indent-tabs-mode nil)))
+(add-hook 'prog-mode-hook #'(lambda () (setq-default tab-width 4
+                                        indent-tabs-mode nil)))
 
 (use-package projectile
   :diminish projectile-mode
