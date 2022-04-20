@@ -71,7 +71,6 @@
 
 (use-package python
   :ensure t
-  :hook (python-mode . lsp)
   :custom
   (python-shell-interpreter "python3"))
 
