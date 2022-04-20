@@ -64,6 +64,8 @@
   :commands (lsp lsp-deferred)
   :init
   (setq lsp-keymap-prefix "C-c l")
+  (setq lsp-diagnostics-provider :none)
+  (setq lsp-headerline-breadcrumb-enable-diagnostics nil)
   :config
   (lsp-enable-which-key-integration t))
 
