@@ -125,6 +125,9 @@
 (use-package doom-modeline
   :init (doom-modeline-mode 1))
 
+(use-package flycheck)
+(global-flycheck-mode)
+
 
 ;; ------------------------- DON'T TOUCH ------------------------------
 (custom-set-variables
