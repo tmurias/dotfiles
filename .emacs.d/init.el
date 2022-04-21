@@ -87,11 +87,6 @@
   (evil-set-undo-system 'undo-tree)
   (global-undo-tree-mode 1))
 
-;; Indent with 4 spaces
-;; https://www.emacswiki.org/emacs/IndentingC
-(add-hook 'prog-mode-hook #'(lambda () (setq-default tab-width 4
-                                        indent-tabs-mode nil)))
-
 (use-package projectile
   :diminish projectile-mode
   :config (projectile-mode)
@@ -125,6 +120,12 @@
 
 (use-package flycheck)
 (global-flycheck-mode)
+
+
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
 
 
 ;; ------------------------- DON'T TOUCH ------------------------------
