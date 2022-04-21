@@ -7,6 +7,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvie/vim-flake8'
 Plug 'vim-scripts/taglist.vim'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 " END PLUGIN SETUP-----------------------------------------------------
 
@@ -29,10 +30,6 @@ set background=dark
 " Workaround for terminals that can't display fancy characters
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
-
-autocmd FileType c call Indent2Spaces()
-autocmd FileType h call Indent2Spaces()
-autocmd FileType python call Indent2Spaces()
 
 
 badd +1 ~/dotfiles/.vimrc
