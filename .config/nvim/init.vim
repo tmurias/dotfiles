@@ -1,7 +1,7 @@
 "----------------------------------------------------------------------
 "-PLUGINS
 "----------------------------------------------------------------------
-call plug#begin("~/.vim/plugged")
+call plug#begin()
 Plug 'dracula/vim'              " Colourscheme
 Plug 'sainnhe/everforest'       " Colourscheme
 Plug 'morhetz/gruvbox'          " Colourscheme
@@ -9,7 +9,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'       " Git
 Plug 'nvie/vim-flake8'          " Python linting
-Plug 'jlanzarotta/bufexplorer'
+Plug 'tmurias/bufexplorer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
