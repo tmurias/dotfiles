@@ -47,6 +47,7 @@ set cscopetag
 " Taglist settings
 let g:Tlist_Show_One_File=1
 let g:Tlist_Use_Right_Window=1
+let g:Tlist_WinWidth=48
 
 " Gruvbox colourscheme settings
 let g:gruvbox_contrast_dark="hard"
