@@ -5,7 +5,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvie/vim-flake8'
-Plug 'yegappan/taglist'
+Plug 'preservim/tagbar'
 Plug 'tmurias/bufexplorer'
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
