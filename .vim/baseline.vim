@@ -52,6 +52,7 @@ let g:Tlist_WinWidth=48
 
 " Gruvbox colourscheme settings
 let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_contrast_light="hard"
 
 " Everforest config
 let g:everforest_background = "hard"
@@ -105,6 +106,19 @@ command! IndentTab8 call IndentTab8()
 
 command! NE NERDTreeToggle
 command! TL TlistToggle
+
+
+"----------------------------------------------------------------------
+"- KEY MAPPINGS
+"----------------------------------------------------------------------
+
+let mapleader=" "
+vnoremap <leader>x "+d
+vnoremap <leader>c "+y
+vnoremap <leader>v "+p
+nnoremap <leader>v "+p
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 
 "----------------------------------------------------------------------
