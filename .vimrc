@@ -6,7 +6,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'nvie/vim-flake8'
 Plug 'yegappan/taglist'
-Plug 'jlanzarotta/bufexplorer'
+Plug 'tmurias/bufexplorer'
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 " END PLUGIN SETUP-----------------------------------------------------
