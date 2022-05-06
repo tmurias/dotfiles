@@ -2,9 +2,8 @@
 "- GENERAL SETTINGS
 "----------------------------------------------------------------------
 
-" Show line numbers (relative)
+" Show line numbers
 set number
-set relativenumber
 
 " Set padding for scrolling
 set scrolloff=3
