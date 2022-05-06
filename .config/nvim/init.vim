@@ -5,7 +5,7 @@ call plug#begin()
 Plug 'dracula/vim'              " Colourscheme
 Plug 'sainnhe/everforest'       " Colourscheme
 Plug 'morhetz/gruvbox'          " Colourscheme
-Plug 'scrooloose/nerdtree'
+Plug 'tmurias/nerdtree'
 Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-fugitive'       " Git
 Plug 'nvie/vim-flake8'          " Python linting
