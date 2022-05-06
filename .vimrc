@@ -31,5 +31,7 @@ set background=dark
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
+" https://github.com/preservim/nerdtree/issues/928
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 badd +1 ~/dotfiles/.vimrc
