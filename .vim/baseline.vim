@@ -47,6 +47,9 @@ set cscopetag
 "- PLUGIN SETTINGS
 "----------------------------------------------------------------------
 
+" Tagbar settings
+let g:tagbar_sort = 0
+
 " Gruvbox colourscheme settings
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
