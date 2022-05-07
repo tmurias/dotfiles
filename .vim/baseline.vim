@@ -101,9 +101,6 @@ command! Indent4Spaces call Indent4Spaces()
 command! IndentTab4 call IndentTab4()
 command! IndentTab8 call IndentTab8()
 
-command! NE NERDTreeToggle
-command! TL TagbarToggle
-
 
 "----------------------------------------------------------------------
 "- KEY MAPPINGS
