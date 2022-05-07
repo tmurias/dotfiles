@@ -48,6 +48,4 @@ command! DarkMode call DarkMode()
 
 lua require('nvim-autopairs').setup{}
 
-command! TL TagbarToggle
-
 badd +1 ~/dotfiles/.config/nvim/init.vim
