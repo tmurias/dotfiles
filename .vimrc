@@ -34,4 +34,7 @@ let g:NERDTreeDirArrowCollapsible="~"
 " https://github.com/preservim/nerdtree/issues/928
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
+" https://unix.stackexchange.com/questions/50733/cant-use-mouse-properly-when-running-vim-in-tmux
+set ttymouse=xterm2
+
 badd +1 ~/dotfiles/.vimrc
