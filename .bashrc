@@ -119,5 +119,3 @@ fi
 # Set vim as default editor (for git, etc.)
 export VISUAL=vim
 export EDITOR="$VISUAL"
-
-source /home/taylor/Development/openpilot/tools/openpilot_env.sh
