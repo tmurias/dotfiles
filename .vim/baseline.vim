@@ -42,6 +42,9 @@ set breakindent
 " When there are multiple options for a definition, this lets you choose
 set cscopetag
 
+" Make backspace work like most modern programs
+set backspace=indent,eol,start
+
 
 "----------------------------------------------------------------------
 "- PLUGIN SETTINGS
