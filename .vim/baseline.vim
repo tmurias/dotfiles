@@ -39,9 +39,6 @@ set ruler
 " Makes wrapped lines easier to read
 set breakindent
 
-" When there are multiple options for a definition, this lets you choose
-set cscopetag
-
 
 "----------------------------------------------------------------------
 "- PLUGIN SETTINGS
