@@ -47,17 +47,20 @@ set cscopetag
 "- PLUGIN SETTINGS
 "----------------------------------------------------------------------
 
-" Tagbar settings
+" NERDTree file browser
+let g:NERDTreeHijackNetrw=0 " Use netrw instead of NT when running "vim ."
+
+" Tagbar (summary of functions and stuff)
 let g:tagbar_sort = 0
 
-" Gruvbox colourscheme settings
+" Colorscheme
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 
-" Everforest config
+" Colorscheme
 let g:everforest_background = "hard"
 
-" Jedi setings
+" Jedi (Python autocomplete)
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
 

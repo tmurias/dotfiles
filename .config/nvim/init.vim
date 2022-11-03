@@ -24,7 +24,7 @@ function! SetColorscheme(darkmode)
 	if exists("$TMUX") || (!a:darkmode)
 		colorscheme gruvbox
 	else
-		colorscheme default
+		colorscheme everforest
 	endif
 endfunction
 
