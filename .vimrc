@@ -37,6 +37,8 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 " https://unix.stackexchange.com/questions/50733/cant-use-mouse-properly-when-running-vim-in-tmux
 set ttymouse=xterm2
 
+set cursorline
+
 autocmd BufNewFile,BufRead *.at set filetype=python
 
 badd +1 ~/dotfiles/.vimrc
