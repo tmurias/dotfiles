@@ -36,8 +36,8 @@ set laststatus=2
 " Not enabled by default on gVim
 set ruler
 
-" Makes wrapped lines easier to read
-set breakindent
+" Line wrap makes code harder to read imo
+set nowrap
 
 
 "----------------------------------------------------------------------
