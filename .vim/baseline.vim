@@ -61,6 +61,9 @@ let g:everforest_background = "hard"
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
 
+" Match trailing whitespace so we can highlight it
+match ExtraWhitespace /\s\+$/
+
 
 "----------------------------------------------------------------------
 "- FUNCTIONS
@@ -94,6 +97,14 @@ function! IndentTab8()
 	set noexpandtab
 endfunction
 
+function! ShowTrailingWhitespace()
+	highlight ExtraWhitespace ctermbg=red guibg=red
+endfunction
+
+function! HideTrailingWhitespace()
+	highlight ExtraWhitespace ctermbg=NONE guibg=NONE
+endfunction
+
 
 "----------------------------------------------------------------------
 "- COMMANDS
@@ -103,6 +114,9 @@ command! Indent2Spaces call Indent2Spaces()
 command! Indent4Spaces call Indent4Spaces()
 command! IndentTab4 call IndentTab4()
 command! IndentTab8 call IndentTab8()
+
+command! ShowTrailSpace call ShowTrailingWhitespace()
+command! HideTrailSpace call HideTrailingWhitespace()
 
 
 "----------------------------------------------------------------------
