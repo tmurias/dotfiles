@@ -64,9 +64,6 @@ let g:everforest_background = "hard"
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
 
-" Match trailing whitespace so we can highlight it
-match ExtraWhitespace /\s\+$/
-
 
 "----------------------------------------------------------------------
 "- FUNCTIONS
@@ -102,10 +99,12 @@ endfunction
 
 function! ShowTrailingWhitespace()
 	highlight ExtraWhitespace ctermbg=red guibg=red
+	match ExtraWhitespace /\s\+$/
 endfunction
 
 function! HideTrailingWhitespace()
 	highlight ExtraWhitespace ctermbg=NONE guibg=NONE
+	match ExtraWhitespace /\s\+$/
 endfunction
 
 
