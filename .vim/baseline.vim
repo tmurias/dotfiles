@@ -36,11 +36,8 @@ set laststatus=2
 " Not enabled by default on gVim
 set ruler
 
-" Makes wrapped lines easier to read
-set breakindent
-
-" When there are multiple options for a definition, this lets you choose
-set cscopetag
+" Line wrap makes code harder to read imo
+set nowrap
 
 " Make backspace work like most modern programs
 set backspace=indent,eol,start
@@ -50,19 +47,25 @@ set backspace=indent,eol,start
 "- PLUGIN SETTINGS
 "----------------------------------------------------------------------
 
-" Tagbar settings
+" NERDTree file browser
+let g:NERDTreeHijackNetrw=0 " Use netrw instead of NT when running "vim ."
+
+" Tagbar (summary of functions and stuff)
 let g:tagbar_sort = 0
 
-" Gruvbox colourscheme settings
+" Colorscheme
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"
 
-" Everforest config
+" Colorscheme
 let g:everforest_background = "hard"
 
-" Jedi setings
+" Jedi (Python autocomplete)
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 0
+
+" Match trailing whitespace so we can highlight it
+match ExtraWhitespace /\s\+$/
 
 
 "----------------------------------------------------------------------
@@ -97,6 +100,14 @@ function! IndentTab8()
 	set noexpandtab
 endfunction
 
+function! ShowTrailingWhitespace()
+	highlight ExtraWhitespace ctermbg=red guibg=red
+endfunction
+
+function! HideTrailingWhitespace()
+	highlight ExtraWhitespace ctermbg=NONE guibg=NONE
+endfunction
+
 
 "----------------------------------------------------------------------
 "- COMMANDS
@@ -106,6 +117,9 @@ command! Indent2Spaces call Indent2Spaces()
 command! Indent4Spaces call Indent4Spaces()
 command! IndentTab4 call IndentTab4()
 command! IndentTab8 call IndentTab8()
+
+command! ShowTrailSpace call ShowTrailingWhitespace()
+command! HideTrailSpace call HideTrailingWhitespace()
 
 
 "----------------------------------------------------------------------

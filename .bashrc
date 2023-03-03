@@ -119,3 +119,5 @@ fi
 # Set vim as default editor (for git, etc.)
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+export PATH="$PATH:/home/taylor/bin"
