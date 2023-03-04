@@ -1,28 +1,3 @@
-"----------------------------------------------------------------------
-"-PLUGINS
-"----------------------------------------------------------------------
-call plug#begin()
-Plug 'tmurias/nerdtree'
-Plug 'windwp/nvim-autopairs'
-Plug 'tpope/vim-fugitive'       " Git
-Plug 'nvie/vim-flake8'          " Python linting
-Plug 'tmurias/bufexplorer'
-Plug 'neovim/nvim-lspconfig'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'preservim/tagbar'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-" Colorschemes
-Plug 'dracula/vim'
-Plug 'sainnhe/everforest'
-Plug 'morhetz/gruvbox'
-Plug 'cocopon/iceberg.vim'
-Plug 'tomasr/molokai'
-Plug 'nlknguyen/papercolor-theme'
-Plug 'mhartington/oceanic-next'
-call plug#end()
-
-
 source ~/dotfiles/.vim/baseline.vim
 
 lua require('taylor.lspconfig')
