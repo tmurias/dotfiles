@@ -18,3 +18,7 @@ Treesitter instructions:
 - Python
     - Make sure python (or python3) is in path, in addition to gcc and g++ being installed
     - :TSInstall python
+- Other
+    - Install vim and lua to be able to parse config files
+    - :TSInstall vim
+    - :TSInstall lua
