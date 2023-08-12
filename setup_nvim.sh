@@ -8,7 +8,7 @@ then
 	echo '~/.config/nvim/init.vim already links to managed config'
 else
 	echo 'Linking ~/.config/nvim/init.vim to managed nvim config'
-	echo '\nsource ~/dotfiles/.config/nvim/init.vim\n' >> ~/.config/nvim/init.vim
+	echo -e "\nsource ~/dotfiles/.config/nvim/init.vim\n" >> ~/.config/nvim/init.vim
 fi
 
 # Install plugins
