@@ -60,10 +60,6 @@ let g:gruvbox_contrast_light="hard"
 " Colorscheme
 let g:everforest_background = "hard"
 
-" Jedi (Python autocomplete)
-let g:jedi#popup_on_dot = 0
-let g:jedi#show_call_signatures = 0
-
 
 "----------------------------------------------------------------------
 "- FUNCTIONS
