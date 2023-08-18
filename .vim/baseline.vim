@@ -129,6 +129,7 @@ nnoremap <leader>v "+p
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>tt :TagbarToggle<CR>
+nnoremap <leader>q @q
 
 
 "----------------------------------------------------------------------
