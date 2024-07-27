@@ -33,9 +33,6 @@ set path+=**
 " Always show statusline (filename at bottom)
 set laststatus=2
 
-" Reduce filepath in statusline to relative path
-set statusline+=%{expand('%:~:.')}
-
 " Not enabled by default on gVim
 set ruler
 
