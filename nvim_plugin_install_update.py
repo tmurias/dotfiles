@@ -17,6 +17,7 @@ if __name__ == "__main__":
         ("nvim-treesitter", "nvim-treesitter"),
         ("morhetz", "gruvbox"),
         ("mhartington", "oceanic-next"),
+        ("NLKNguyen", "papercolor-theme"),
     ]
 
     for p in plugins:
