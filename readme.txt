@@ -20,7 +20,9 @@ Treesitter instructions:
     - :TSInstall python
 - Other
     - Install vim and lua to be able to parse config files
-    - :TSInstall vim
-    - :TSInstall lua
+        - :TSInstall vim
+        - :TSInstall lua
+    - For :help menu
+        - :TSInstall vimdoc
 
 Also need to install ctags for jump-to-definition and the tagbar to work.

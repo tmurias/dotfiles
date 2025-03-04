@@ -30,7 +30,7 @@ set mouse=a
 " Search recursively into subdirectories
 set path+=**
 
-" Always show filename at bottom
+" Always show statusline (filename at bottom)
 set laststatus=2
 
 " Not enabled by default on gVim
@@ -129,6 +129,7 @@ nnoremap <leader>v "+p
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>tt :TagbarToggle<CR>
+nnoremap <leader>q @q
 
 
 "----------------------------------------------------------------------
