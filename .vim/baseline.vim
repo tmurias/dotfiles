@@ -42,6 +42,9 @@ set nowrap
 " Make backspace work like most modern programs
 set backspace=indent,eol,start
 
+" Use ripgrep for grep
+set grepprg=rg\ --vimgrep
+
 
 "----------------------------------------------------------------------
 "- PLUGIN SETTINGS
@@ -115,6 +118,8 @@ command! IndentTab8 call IndentTab8()
 
 command! ShowTrailSpace call ShowTrailingWhitespace()
 command! HideTrailSpace call HideTrailingWhitespace()
+
+command! -nargs=1 Crefs execute 'grep! -w ' . shellescape(expand('<cword>')) . ' -g "*.c" -g "*.cpp" -g "*.h" ' . <q-args> | copen
 
 
 "----------------------------------------------------------------------
