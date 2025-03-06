@@ -135,6 +135,8 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>tt :TagbarToggle<CR>
 nnoremap <leader>q @q
+nnoremap <leader>rc :Crefs .<CR>
+nnoremap <leader>rs :Crefs sierra<CR>
 
 
 "----------------------------------------------------------------------
