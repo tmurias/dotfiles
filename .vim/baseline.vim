@@ -141,7 +141,12 @@ nnoremap <leader>q @q
 "- FILETYPE CUSTOMIZATIONS
 "----------------------------------------------------------------------
 
+" Wrap long lines and break between words when editing markdown
 autocmd BufRead,BufNewFile *.md setlocal wrap linebreak
+
+" Move the quickfix window to the bottom of all other windows when it opens.
+" This is mostly to prevent qf from opening underneath tagbar.
+autocmd FileType qf wincmd J
 
 
 "----------------------------------------------------------------------
