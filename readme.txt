@@ -26,3 +26,6 @@ Treesitter instructions:
         - :TSInstall vimdoc
 
 Also need to install ctags for jump-to-definition and the tagbar to work.
+
+Access to system clipboard: need to install a provider (eg. xclip for X11 or
+wl-clipboard for wayland).
