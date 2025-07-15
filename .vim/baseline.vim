@@ -150,6 +150,9 @@ autocmd BufRead,BufNewFile *.md setlocal wrap linebreak
 " This is mostly to prevent qf from opening underneath tagbar.
 autocmd FileType qf wincmd J
 
+" Don't insert the next // when hitting enter on a C++ style comment
+autocmd FileType c setlocal comments-=://
+
 
 "----------------------------------------------------------------------
 "- STARTUP ACTIONS
