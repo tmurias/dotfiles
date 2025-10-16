@@ -18,6 +18,7 @@ if __name__ == "__main__":
         ("morhetz", "gruvbox"),
         ("mhartington", "oceanic-next"),
         ("NLKNguyen", "papercolor-theme"),
+        ("catppuccin", "nvim"),
     ]
 
     for p in plugins:
