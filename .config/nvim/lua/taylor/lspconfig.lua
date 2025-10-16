@@ -30,8 +30,7 @@ end
 -- map buffer local keybindings when the language server attaches
 local servers = { 'pyright', 'ccls' }
 for _, lsp in pairs(servers) do
-  require('lspconfig')[lsp].setup {
+  vim.lsp.config(lsp, {
     on_attach = on_attach,
-    autostart = false,
-  }
+  })
 end
