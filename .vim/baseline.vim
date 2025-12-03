@@ -119,7 +119,7 @@ command! IndentTab8 call IndentTab8()
 command! ShowTrailSpace call ShowTrailingWhitespace()
 command! HideTrailSpace call HideTrailingWhitespace()
 
-command! -nargs=1 Crefs execute 'grep! -w ' . shellescape(expand('<cword>')) . ' -g "*.c" -g "*.cpp" -g "*.h" ' . <q-args> | copen
+command! -nargs=1 Crefs execute 'grep! -w --no-ignore ' . shellescape(expand('<cword>')) . ' -g "*.c" -g "*.cpp" -g "*.h" ' . <q-args> | copen
 
 
 "----------------------------------------------------------------------
