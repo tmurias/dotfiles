@@ -119,6 +119,9 @@ command! IndentTab8 call IndentTab8()
 command! ShowTrailSpace call ShowTrailingWhitespace()
 command! HideTrailSpace call HideTrailingWhitespace()
 
+" Find references in all files
+command! -nargs=1 Arefs execute 'grep! -w --no-ignore ' . shellescape(expand('<cword>')) . ' ' . <q-args> | copen
+" Find references in C/C++ files
 command! -nargs=1 Crefs execute 'grep! -w --no-ignore ' . shellescape(expand('<cword>')) . ' -g "*.c" -g "*.cpp" -g "*.h" ' . <q-args> | copen
 
 
@@ -135,8 +138,8 @@ nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>tt :TagbarToggle<CR>
 nnoremap <leader>q @q
+nnoremap <leader>ra :Arefs .<CR>
 nnoremap <leader>rc :Crefs .<CR>
-nnoremap <leader>rs :Crefs sierra<CR>
 
 
 "----------------------------------------------------------------------
