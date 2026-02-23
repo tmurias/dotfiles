@@ -52,7 +52,7 @@ set grepprg=rg\ --vimgrep
 
 " NERDTree file browser
 let g:NERDTreeHijackNetrw=0 " Use netrw instead of NT when running "vim ."
-let g:NERDTreeIgnore = ['\.o$'] " Don't show object files
+let g:NERDTreeIgnore = ['\.o$', '\.d$'] " Don't show object/dep files
 
 " Tagbar (summary of functions and stuff)
 let g:tagbar_sort = 0
