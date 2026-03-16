@@ -57,6 +57,9 @@ let g:NERDTreeIgnore = ['\.o$', '\.d$'] " Don't show object/dep files
 " Tagbar (summary of functions and stuff)
 let g:tagbar_sort = 0
 
+" Bufexplorer (for viewing/switching buffers)
+let g:bufExplorerFindActive = 0
+
 " Colorscheme
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_contrast_light="hard"

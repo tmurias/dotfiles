@@ -10,7 +10,7 @@ if __name__ == "__main__":
         ("tmurias", "nerdtree"),
         ("windwp", "nvim-autopairs"),
         ("tpope", "vim-fugitive"),
-        ("tmurias", "bufexplorer"),
+        ("jlanzarotta", "bufexplorer"),
         ("neovim", "nvim-lspconfig"),
         ("editorconfig", "editorconfig-vim"),
         ("preservim", "tagbar"),
