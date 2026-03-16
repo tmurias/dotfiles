@@ -157,6 +157,9 @@ autocmd FileType qf wincmd J
 " Don't insert the next // when hitting enter on a C++ style comment
 autocmd FileType c setlocal comments-=://
 
+" Highlight .inc files like config files (from Megachips SDK)
+autocmd BufRead,BufNewFile *.inc set filetype=conf
+
 
 "----------------------------------------------------------------------
 "- STARTUP ACTIONS
